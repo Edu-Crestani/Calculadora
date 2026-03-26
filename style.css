@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    background-color: #807ECE;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.calculadora {
+    background-color: #2D2A37;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 25px rgba(30, 30, 30, 0.701);
+    width: 356px;
+    height: 566px;
+    
+}
+
+.visores {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.visor-baixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visores input {
+    background-color: #2D2A37;
+    text-align: right;
+    outline: none;
+    border: none;
+    font-family: "Rubik", sans-serif;
+}
+
+#visor1 {
+    width: 248px;
+    height: 33px;
+    font-size: 18px;
+    color: #6B6B6B;
+    margin-left: 79px;
+}
+
+#visor2 {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    color: #6B6B6B;
+    margin-left: 33px;
+}
+
+#visor3 {
+    width: 248px;
+    height: 50px;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    margin-right: 30px;
+
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.teclado div {
+    display: flex;
+    gap: 12px;
+    justify-content: space-around;
+}
+
+.teclado button {
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2D2A37;
+    color: rgb(251, 251, 251);
+    font-size: 29px;
+    font-family: "Rubik", sans-serif;
+    box-shadow: 0px 2px 3px 0px #FFFFFF0F inset,
+        0px 0px 2px 0px #0000004A,
+        0px 2px 4px 0px #00000042,
+        0px 4px 6px 0px #0000001A,
+        0px 7px 7px 0px #0000000A,
+        0px 11px 7px 0px #00000003;
+
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #2f2d33;
+    transform: scale(0.95);
+}
+
+.teclado button:hover {
+    transform: scale(1.1);
+
+}
+
+
+.teclado button.limpar {
+    color: #975DFA;
+}
+
+.teclado button.operador {
+    background-color: #462878;
+    font-size: 35px;
+}
+
+.teclado button.resultado {
+    background-color: #7F45E2;
+    font-size: 35px;
+}
+
+button:focus {
+    outline: none;
+}
